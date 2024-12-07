@@ -46,7 +46,7 @@ export const columns: ColumnDef<any>[] = [
           </div>
           <div className="flex items-start gap-2">
             <img
-              src={"/public/collge-image-logo.png"}
+              src={"/collge-image-logo.png"}
               alt="Logo"
               className="h-12 w-12 border rounded-full"
             />
@@ -114,7 +114,7 @@ export const columns: ColumnDef<any>[] = [
     enableSorting: false,
     enableHiding: false,
 
-    filterFn: (row, columnId, value) => {
+    filterFn: (row, _, value) => {
       const collegeName = row.original.college.name.toLowerCase();
       return collegeName.includes(value.toLowerCase());
     },
@@ -284,7 +284,7 @@ export const columns: ColumnDef<any>[] = [
             <br />
             <span className="flex items-center">
               <img
-                src={"/public/news-image.png"}
+                src={"/news-image.png"}
                 alt="logo"
                 className="h-6 w-6 border rounded-full"
               />
@@ -293,7 +293,7 @@ export const columns: ColumnDef<any>[] = [
           </div>
           <div className="flex items-center gap-0.5  border-l-sky-600 border-t-sky-100 border-r-sky-600 border-b-sky-600 bg-sky-100 p-1 rounded-xl">
             <img
-              src={"/public/news-images.png"}
+              src={"/news-images.png"}
               alt="logo"
               className="h-6 w-6 border rounded-full"
             />
